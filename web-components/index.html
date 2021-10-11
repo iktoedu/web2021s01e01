@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Тестова сторінка (web-components)</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <h1>Тестова сторінка (web-components)</h1>
+
+  <template id="fancy-subscription-block-template">
+    <link rel="stylesheet" href="css/components/fancy-subscription-block.css">
+    <form class="form-element" method="post" action="cgi-bin/subscribe.cgi">
+      <label class="input-wrapper">
+        <span class="label-wrapper"><slot name="subject"><span>Введіть свою E-mail адресу для підписки на розсилку:</span></slot></span>
+        <slot name="hidden-fields"><input type="hidden" value="default"></slot>
+        <input type="text" required>
+      </label>
+      <input type="submit" value="Підписатись">
+    </form>
+  </template>
+
+  <template id="fancy-login-block-template">
+    <link rel="stylesheet" href="css/components/fancy-login-block.css">
+    <form class="form-element" method="post" action="cgi-bin/login.cgi">
+      <label class="input-wrapper">
+        <span class="label-wrapper">Логін:</span>
+        <input name="login" type="text">
+      </label>
+      <label class="input-wrapper">
+        <span class="label-wrapper">Пароль:</span>
+        <input name="password" type="password">
+      </label>
+      <input type="submit" value="Вхід">
+    </form>
+  </template>
+
+  <template id="person-card-template">
+    <link rel="stylesheet" href="css/components/person-card.css">
+    <div class="card-wrapper">
+      <div class="photo-wrapper">
+        <slot name="image-placeholder"><img src="images/mystery-person.jpg"></slot>
+      </div>
+      <div class="main-info-wrapper">
+        <div class="info-item">
+          <span class="label">Ім'я:</span>
+          <span class="value"><slot name="person-name"><span>Не відомо</span></slot></span>
+        </div>
+        <div class="info-item">
+          <span class="label">Вік:</span>
+          <span class="value"><slot name="person-age"><span>Не відомо</span></slot></span>
+        </div>
+      </div>
+      <div class="more-info-wrapper">
+        <div class="info-item">
+          <span class="label">Організація:</span>
+          <span class="value"><slot name="person-organisation"><span>Не відомо</span></slot></span>
+        </div>
+        <div class="info-item">
+          <span class="label">Посада:</span>
+          <span class="value"><slot name="person-position"><span>Не відомо</span></slot></span>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <fancy-subscription-block>
+    <span slot="subject">Введіть свою E-mail адресу для підписки на останні новини:</span>
+    <input slot="hidden-fields" type="hidden" value="news">
+  </fancy-subscription-block>
+  <fancy-subscription-block>
+    <span slot="subject">Введіть свою E-mail адресу для підписки на спортивну розсилку:</span>
+    <input slot="hidden-fields" type="hidden" value="sport">
+  </fancy-subscription-block>
+
+  <fancy-login-block></fancy-login-block>
+
+  <hr>
+
+  <div class="person-card-list">
+    <person-card>
+      <img slot="image-placeholder" src="images/3f67d5e7-cb34-48e2-821e-19f1afac7c7a.jpg">
+      <span slot="person-name">Григорій Вільний</span>
+      <span slot="person-age">26 років</span>
+      <span slot="person-organisation">ПНДІ "Чорна гора"</span>
+      <span slot="person-position">Старший дослідник</span>
+    </person-card>
+
+    <person-card>
+      <img slot="image-placeholder" src="images/2196a7a2-6ccb-45ae-af0e-aeaceefe5ab1.jpg">
+      <span slot="person-name">Іван Гадюка</span>
+      <span slot="person-organisation">ПВК "Військоі без меж"</span>
+      <span slot="person-position">Головнокомандувач</span>
+    </person-card>
+  </div>
+
+  <script src="js/index.js"></script>
+</body>
+</html>

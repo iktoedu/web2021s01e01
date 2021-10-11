@@ -1,0 +1,46 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333333; }
+
+.fancy-login-block_input-wrapper {
+  display: block; }
+
+.fancy-login-block_label-wrapper {
+  font-weight: bold; }
+
+.fancy-subscription-block_form-element {
+  margin: 1rem 0; }
+
+.fancy-subscription-block_label-wrapper {
+  display: block;
+  font-style: italic; }
+
+.person-card_card-wrapper {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  display: inline-block;
+  width: 300px;
+  vertical-align: top; }
+
+.person-card_photo-wrapper {
+  max-width: 60px;
+  float: left; }
+  .person-card_photo-wrapper img, .person-card_photo-wrapper ::slotted(img) {
+    width: 100%; }
+
+.person-card_main-info-wrapper {
+  overflow: hidden;
+  padding-left: 5px; }
+  .person-card_main-info-wrapper .person-card_info-item .person-card_label {
+    font-weight: bold;
+    font-style: italic; }
+
+.person-card_more-info-wrapper {
+  margin-top: 1rem;
+  clear: both; }
+  .person-card_more-info-wrapper .person-card_info-item {
+    font-size: 0.875rem; }
+    .person-card_more-info-wrapper .person-card_info-item .person-card_label {
+      font-style: italic; }

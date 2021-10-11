@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Тестова сторінка (css-nesting)</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <h1>Тестова сторінка (css-nesting)</h1>
+
+  <div class="fancy-subscription-block-wrapper">
+    <form class="form-element" method="post" action="cgi-bin/subscribe.cgi">
+      <label class="input-wrapper">
+        <span class="label-wrapper"><span>Введіть свою E-mail адресу для підписки на останні новини:</span></span>
+        <input type="hidden" value="news">
+        <input type="text" required>
+      </label>
+      <input type="submit" value="Підписатись">
+    </form>
+  </div>
+
+  <div class="fancy-subscription-block-wrapper">
+    <form class="form-element" method="post" action="cgi-bin/subscribe.cgi">
+      <label class="input-wrapper">
+        <span class="label-wrapper"><span>Введіть свою E-mail адресу для підписки на спортивну розсилку:</span></span>
+        <input type="hidden" value="sport">
+        <input type="text" required>
+      </label>
+      <input type="submit" value="Підписатись">
+    </form>
+  </div>
+
+  <div class="fancy-login-block-wrapper">
+    <form class="form-element" method="post" action="cgi-bin/login.cgi">
+      <label class="input-wrapper">
+        <span class="label-wrapper">Логін:</span>
+        <input name="login" type="text">
+      </label>
+      <label class="input-wrapper">
+        <span class="label-wrapper">Пароль:</span>
+        <input name="password" type="password">
+      </label>
+      <input type="submit" value="Вхід">
+    </form>
+  </div>
+
+  <hr>
+
+  <div class="person-card-list">
+    <div class="person-card-wrapper">
+      <div class="card-wrapper">
+        <div class="photo-wrapper">
+          <img src="images/3f67d5e7-cb34-48e2-821e-19f1afac7c7a.jpg">
+        </div>
+        <div class="main-info-wrapper">
+          <div class="info-item">
+            <span class="label">Ім'я:</span>
+            <span class="value"><span>Григорій Вільний</span></span>
+          </div>
+          <div class="info-item">
+            <span class="label">Вік:</span>
+            <span class="value"><span>26 років</span></span>
+          </div>
+        </div>
+        <div class="more-info-wrapper">
+          <div class="info-item">
+            <span class="label">Організація:</span>
+            <span class="value"><span>ПНДІ "Чорна гора"</span></span>
+          </div>
+          <div class="info-item">
+            <span class="label">Посада:</span>
+            <span class="value"><span>Старший дослідник</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="person-card-wrapper">
+      <div class="card-wrapper">
+        <div class="photo-wrapper">
+          <img src="images/2196a7a2-6ccb-45ae-af0e-aeaceefe5ab1.jpg">
+        </div>
+        <div class="main-info-wrapper">
+          <div class="info-item">
+            <span class="label">Ім'я:</span>
+            <span class="value"><span>Іван Гадюка</span></span>
+          </div>
+          <div class="info-item">
+            <span class="label">Вік:</span>
+            <span class="value"><span>Не відомо</span></span>
+          </div>
+        </div>
+        <div class="more-info-wrapper">
+          <div class="info-item">
+            <span class="label">Організація:</span>
+            <span class="value"><span>ПВК "Військоі без меж"</span></span>
+          </div>
+          <div class="info-item">
+            <span class="label">Посада:</span>
+            <span class="value"><span>Головнокомандувач</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

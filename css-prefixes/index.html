@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Тестова сторінка (css-prefixes)</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+  <h1>Тестова сторінка (css-prefixes)</h1>
+
+  <form class="fancy-subscription-block_form-element" method="post" action="cgi-bin/subscribe.cgi">
+    <label class="fancy-subscription-block_input-wrapper">
+      <span class="fancy-subscription-block_label-wrapper"><span>Введіть свою E-mail адресу для підписки на останні новини:</span></span>
+      <input type="hidden" value="news">
+      <input type="text" required>
+    </label>
+    <input type="submit" value="Підписатись">
+  </form>
+
+  <form class="fancy-subscription-block_form-element" method="post" action="cgi-bin/subscribe.cgi">
+    <label class="fancy-subscription-block_input-wrapper">
+      <span class="fancy-subscription-block_label-wrapper"><span>Введіть свою E-mail адресу для підписки на спортивну розсилку:</span></span>
+      <input type="hidden" value="sport">
+      <input type="text" required>
+    </label>
+    <input type="submit" value="Підписатись">
+  </form>
+
+  <form class="fancy-login-block_form-element" method="post" action="cgi-bin/login.cgi">
+    <label class="fancy-login-block_input-wrapper">
+      <span class="fancy-login-block_label-wrapper">Логін:</span>
+      <input name="login" type="text">
+    </label>
+    <label class="fancy-login-block_input-wrapper">
+      <span class="fancy-login-block_label-wrapper">Пароль:</span>
+      <input name="password" type="password">
+    </label>
+    <input type="submit" value="Вхід">
+  </form>
+
+  <hr>
+
+  <div class="person-card-list">
+    <div class="person-card_card-wrapper">
+      <div class="person-card_photo-wrapper">
+        <img src="images/3f67d5e7-cb34-48e2-821e-19f1afac7c7a.jpg">
+      </div>
+      <div class="person-card_main-info-wrapper">
+        <div class="person-card_info-item">
+          <span class="person-card_label">Ім'я:</span>
+          <span class="person-card_value"><span>Григорій Вільний</span></span>
+        </div>
+        <div class="person-card_info-item">
+          <span class="person-card_label">Вік:</span>
+          <span class="person-card_value"><span>26 років</span></span>
+        </div>
+      </div>
+      <div class="person-card_more-info-wrapper">
+        <div class="person-card_info-item">
+          <span class="person-card_label">Організація:</span>
+          <span class="person-card_value"><span>ПНДІ "Чорна гора"</span></span>
+        </div>
+        <div class="person-card_info-item">
+          <span class="person-card_label">Посада:</span>
+          <span class="person-card_value"><span>Старший дослідник</span></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="person-card_card-wrapper">
+      <div class="person-card_photo-wrapper">
+        <img src="images/2196a7a2-6ccb-45ae-af0e-aeaceefe5ab1.jpg">
+      </div>
+      <div class="person-card_main-info-wrapper">
+        <div class="person-card_info-item">
+          <span class="person-card_label">Ім'я:</span>
+          <span class="person-card_value"><span>Іван Гадюка</span></span>
+        </div>
+        <div class="person-card_info-item">
+          <span class="person-card_label">Вік:</span>
+          <span class="person-card_value"><span>Не відомо</span></span>
+        </div>
+      </div>
+      <div class="person-card_more-info-wrapper">
+        <div class="person-card_info-item">
+          <span class="person-card_label">Організація:</span>
+          <span class="person-card_value"><span>ПВК "Військоі без меж"</span></span>
+        </div>
+        <div class="person-card_info-item">
+          <span class="person-card_label">Посада:</span>
+          <span class="person-card_value"><span>Головнокомандувач</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

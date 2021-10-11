@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333333; }
+
+.fancy-login-block-wrapper .input-wrapper {
+  display: block; }
+
+.fancy-login-block-wrapper .label-wrapper {
+  font-weight: bold; }
+
+.fancy-subscription-block-wrapper .form-element {
+  margin: 1rem 0; }
+
+.fancy-subscription-block-wrapper .label-wrapper {
+  display: block;
+  font-style: italic; }
+
+.person-card-wrapper {
+  display: inline-block; }
+
+.person-card-wrapper .card-wrapper {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  display: inline-block;
+  width: 300px;
+  vertical-align: top; }
+
+.person-card-wrapper .photo-wrapper {
+  max-width: 60px;
+  float: left; }
+  .person-card-wrapper .photo-wrapper img, .person-card-wrapper .photo-wrapper ::slotted(img) {
+    width: 100%; }
+
+.person-card-wrapper .main-info-wrapper {
+  overflow: hidden;
+  padding-left: 5px; }
+  .person-card-wrapper .main-info-wrapper .info-item .label {
+    font-weight: bold;
+    font-style: italic; }
+
+.person-card-wrapper .more-info-wrapper {
+  margin-top: 1rem;
+  clear: both; }
+  .person-card-wrapper .more-info-wrapper .info-item {
+    font-size: 0.875rem; }
+    .person-card-wrapper .more-info-wrapper .info-item .label {
+      font-style: italic; }
